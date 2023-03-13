@@ -16,6 +16,10 @@
 		06574AE729BEB52700196FD9 /* ChattingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06574AE629BEB52700196FD9 /* ChattingTests.swift */; };
 		06574AF129BEB52800196FD9 /* ChattingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06574AF029BEB52800196FD9 /* ChattingUITests.swift */; };
 		06574AF329BEB52800196FD9 /* ChattingUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06574AF229BEB52800196FD9 /* ChattingUITestsLaunchTests.swift */; };
+		06574B0129BEB94A00196FD9 /* ChattingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06574AFF29BEB94A00196FD9 /* ChattingCell.swift */; };
+		06574B0229BEB94A00196FD9 /* ChattingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 06574B0029BEB94A00196FD9 /* ChattingCell.xib */; };
+		06574B0529BEC3F600196FD9 /* YourCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06574B0329BEC3F600196FD9 /* YourCell.swift */; };
+		06574B0629BEC3F600196FD9 /* YourCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 06574B0429BEC3F600196FD9 /* YourCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		06574AEC29BEB52800196FD9 /* ChattingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChattingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		06574AF029BEB52800196FD9 /* ChattingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChattingUITests.swift; sourceTree = "<group>"; };
 		06574AF229BEB52800196FD9 /* ChattingUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChattingUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		06574AFF29BEB94A00196FD9 /* ChattingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChattingCell.swift; sourceTree = "<group>"; };
+		06574B0029BEB94A00196FD9 /* ChattingCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChattingCell.xib; sourceTree = "<group>"; };
+		06574B0329BEC3F600196FD9 /* YourCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YourCell.swift; sourceTree = "<group>"; };
+		06574B0429BEC3F600196FD9 /* YourCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YourCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +111,10 @@
 				06574AD129BEB52700196FD9 /* SceneDelegate.swift */,
 				06574AD329BEB52700196FD9 /* ViewController.swift */,
 				06574AD529BEB52700196FD9 /* Main.storyboard */,
+				06574AFF29BEB94A00196FD9 /* ChattingCell.swift */,
+				06574B0029BEB94A00196FD9 /* ChattingCell.xib */,
+				06574B0329BEC3F600196FD9 /* YourCell.swift */,
+				06574B0429BEC3F600196FD9 /* YourCell.xib */,
 				06574AD829BEB52700196FD9 /* Assets.xcassets */,
 				06574ADA29BEB52700196FD9 /* LaunchScreen.storyboard */,
 				06574ADD29BEB52700196FD9 /* Info.plist */,
@@ -232,8 +244,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				06574ADC29BEB52700196FD9 /* LaunchScreen.storyboard in Resources */,
+				06574B0629BEC3F600196FD9 /* YourCell.xib in Resources */,
 				06574AD929BEB52700196FD9 /* Assets.xcassets in Resources */,
 				06574AD729BEB52700196FD9 /* Main.storyboard in Resources */,
+				06574B0229BEB94A00196FD9 /* ChattingCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,9 +272,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06574B0529BEC3F600196FD9 /* YourCell.swift in Sources */,
 				06574AD429BEB52700196FD9 /* ViewController.swift in Sources */,
 				06574AD029BEB52700196FD9 /* AppDelegate.swift in Sources */,
 				06574AD229BEB52700196FD9 /* SceneDelegate.swift in Sources */,
+				06574B0129BEB94A00196FD9 /* ChattingCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,6 +453,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4W68W6LG48;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Chatting/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -464,6 +481,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4W68W6LG48;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Chatting/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

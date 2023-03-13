@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="YourCell" rowHeight="152" id="KGk-i7-Jjw" customClass="YourCell" customModule="Chatting" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="944" height="152"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="944" height="152"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="yourBubble" translatesAutoresizingMaskIntoConstraints="NO" id="1Iv-vF-L3c">
+                        <rect key="frame" x="10" y="10" width="228" height="132"/>
+                        <rect key="contentStretch" x="0.5" y="0.5" width="0.0" height="0.0"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2023.03.13" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Le4-0K-es0">
+                        <rect key="frame" x="243" y="126.33333333333333" width="68" height="15.666666666666671"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalHuggingPriority="755" verticalHuggingPriority="755" scrollEnabled="NO" text="fvsfvfsddsaafvsasvgasvasfvs" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="cWt-MI-GHA">
+                        <rect key="frame" x="30" y="15" width="198" height="122"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="textColor" systemColor="labelColor"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="cWt-MI-GHA" firstAttribute="leading" secondItem="1Iv-vF-L3c" secondAttribute="leading" constant="20" id="5Tr-Lv-ym3"/>
+                    <constraint firstItem="Le4-0K-es0" firstAttribute="leading" secondItem="1Iv-vF-L3c" secondAttribute="trailing" constant="5" id="Bad-u9-6L1"/>
+                    <constraint firstItem="Le4-0K-es0" firstAttribute="bottom" secondItem="1Iv-vF-L3c" secondAttribute="bottom" id="HQh-vK-45o"/>
+                    <constraint firstItem="1Iv-vF-L3c" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="bI2-Da-Rzu"/>
+                    <constraint firstAttribute="bottom" secondItem="1Iv-vF-L3c" secondAttribute="bottom" constant="10" id="hN7-LN-UKj"/>
+                    <constraint firstItem="cWt-MI-GHA" firstAttribute="bottom" secondItem="1Iv-vF-L3c" secondAttribute="bottom" constant="-5" id="nSx-us-as1"/>
+                    <constraint firstItem="1Iv-vF-L3c" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="quw-Oq-Iyx"/>
+                    <constraint firstItem="cWt-MI-GHA" firstAttribute="top" secondItem="1Iv-vF-L3c" secondAttribute="top" constant="5" id="v3o-H6-UPl"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Le4-0K-es0" secondAttribute="trailing" constant="40" id="wBU-fQ-U8b"/>
+                    <constraint firstItem="cWt-MI-GHA" firstAttribute="trailing" secondItem="1Iv-vF-L3c" secondAttribute="trailing" constant="-10" id="xMO-XP-njO"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="dateLabel" destination="Le4-0K-es0" id="lYB-EI-8gv"/>
+                <outlet property="textView" destination="cWt-MI-GHA" id="KK4-bi-uO6"/>
+            </connections>
+            <point key="canvasLocation" x="129.7709923664122" y="154.22535211267606"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="yourBubble" width="66.5" height="52.5"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
